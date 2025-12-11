@@ -13,8 +13,8 @@ class SplashProvider extends ChangeNotifier {
         if(isLoggedIn){
           Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const HomeScreen()));
         }else{
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const LoginScreen()));
-          // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const BottomNavScreen()));
+          // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const LoginScreen()));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> const BottomNavScreen()));
         }
       }
     });

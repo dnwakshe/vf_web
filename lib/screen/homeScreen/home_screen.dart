@@ -10,7 +10,7 @@ import 'package:vf_app/constants/string_constants.dart';
 import 'package:vf_app/constants/text_widgets.dart';
 import 'package:vf_app/screen/broadcast/newBroadcast/broadcast_screen.dart';
 import 'package:vf_app/screen/community/community_screen.dart';
-import 'package:vf_app/screen/dashboard1/dashboard_screen.dart';
+// import 'package:vf_app/screen/dashboard1/dashboard_screen.dart';
 import 'package:vf_app/screen/homeScreen/drawer_widget.dart';
 import 'package:vf_app/screen/notifications/notifications_screen.dart';
 import 'package:vf_app/utils/utils.dart';
@@ -108,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen>
             child: TabBarView(
               controller: tabController,
               children: const <Widget>[
-                DashboardScreen(),
+                // DashboardScreen(),
                 CommunityScreen(),
                 NewBroadcastScreen(),
               ],

@@ -14,7 +14,7 @@ import 'package:vf_app/screen/login/login_screen.dart';
 import 'package:vf_app/utils/utils.dart';
 import 'package:vf_app/utils/widgets/UIComponents/svg_widget_custom.dart';
 
-import '../dashboard1/dashboard_screen.dart';
+// import '../dashboard1/dashboard_screen.dart';
 import '../drawerScreens/about/about_screen.dart';
 import '../drawerScreens/electionCampaign/election_campaign_screen.dart';
 import '../drawerScreens/media/media_screen.dart';

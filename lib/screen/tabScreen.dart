@@ -18,7 +18,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   final List<Widget> _pages = const [
     DashboardScreen(),
     Center(child: Text('Search Screen')),
-    Center(child: Text('Favourite Screen')),
+    Center(child: Text('Donations Screen')),
     LoginScreen(),
     // Center(child: Text('Profile Screen')),
 
@@ -28,7 +28,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   final List<String> _titles = [
     'Home',
     'Search',
-    'Favourite',
+    'Donations',
     'Profile',
     "login",
   ];
@@ -171,7 +171,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favourite'),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Donations'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
 
         // BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
