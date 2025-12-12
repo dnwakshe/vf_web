@@ -11,8 +11,13 @@ class AppUrls {
 
   // static dynamic baseURLs = baseEnvUrls[environment];
   // static dynamic baseURLsApiEngine = "https://apiengine.choicetechlab.com/";
+<<<<<<< HEAD
   static dynamic baseURLs = "https://api.vfapp.choicetechlab.com/apis/";
   static dynamic imageBaseURLs = "https://api.vfapp.choicetechlab.com/apis";
+=======
+  static dynamic baseURLs = "https://shivmitra.choicetechlab.com/apis/";
+  static dynamic imageBaseURLs = "https://shivmitra.choicetechlab.com/apis";
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
   //Auth API's
   static String login = '${baseURLs}login';

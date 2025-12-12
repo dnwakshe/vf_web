@@ -6,7 +6,11 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.vfapp"
+=======
+    namespace = "com.example.vf_app"
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +25,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId = "com.vfapp"
+=======
+        applicationId = "com.example.vf_app"
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

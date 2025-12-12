@@ -1,12 +1,20 @@
 import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
+<<<<<<< HEAD
+=======
+import 'package:flutter/cupertino.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vf_app/constants/app_colors.dart';
 import 'package:vf_app/constants/font_constants.dart';
 import 'package:vf_app/constants/string_constants.dart';
+<<<<<<< HEAD
 import 'package:vf_app/screen/homeScreen/home_screen.dart';
+=======
+import 'package:vf_app/screen/splash/splash_screen.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 import 'package:vf_app/utils/utils.dart';
 
 import 'provider/app_providers.dart';
@@ -56,6 +64,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
               primary: AppColors.primary, seedColor: AppColors.primary),
           useMaterial3: false,
+<<<<<<< HEAD
           appBarTheme: const AppBarTheme(
             elevation: 2,
             centerTitle: false,
@@ -65,6 +74,11 @@ class MyApp extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
         home: const HomeScreen(),
+=======
+        ),
+        debugShowCheckedModeBanner: false,
+        home: SplashScreen(),
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
       ),
     );
   }

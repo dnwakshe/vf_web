@@ -6,7 +6,11 @@ import 'package:vf_app/screen/broadcast/model/get_member_list_model.dart';
 class MemberItemCardWidget extends StatefulWidget {
   final GetMemberDatum datum;
 
+<<<<<<< HEAD
   const MemberItemCardWidget({super.key, required this.datum});
+=======
+  const MemberItemCardWidget({Key? key, required this.datum}) : super(key: key);
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
   @override
   _MemberItemCardWidgetState createState() => _MemberItemCardWidgetState();

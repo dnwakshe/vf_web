@@ -12,7 +12,11 @@ class AppColors{
   static const Color primary = Color(0xff43A047);
   static const Color secondry = Color(0xffFFD600);
   static const Color iconColor = Colors.grey;
+<<<<<<< HEAD
   static const Color primaryWithOpacity = Color(0xfffffe9da);
+=======
+  static const Color primaryWithOpacity = Color(0xffFFFE9DA);
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   static const Color cardBackground = Color(0xffFFF0E6);
   static const Color circleAvatarBackground = Color(0xffFFD88D);
   static const Color white = Color(0xffFFFFFF);
@@ -32,6 +36,7 @@ class AppColors{
   static const Color dividerColor = Color(0xffF8F8F8);
   static const Color dividerColor2 = Color(0xffD9D9D9);
 
+<<<<<<< HEAD
 }
 
 class AppImages {
@@ -52,5 +57,9 @@ class AppImages {
 
   // Example AssetImage convenience instances (useful for widgets that accept ImageProvider)
   static const AssetImage logoImage = AssetImage(logo);
+=======
+
+
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 }
 

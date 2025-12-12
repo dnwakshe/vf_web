@@ -9,13 +9,21 @@ class Loader extends StatelessWidget {
   final Animation<Color>? valueColor;
 
   const Loader({
+<<<<<<< HEAD
     super.key,
+=======
+    Key? key,
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     required this.child,
     required this.isCallInProgress,
     this.color = AppColors.white,
     this.opacity = 0.3,
     this.valueColor,
+<<<<<<< HEAD
   });
+=======
+  }) : super(key: key);
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
   @override
   Widget build(BuildContext context) {

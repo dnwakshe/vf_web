@@ -7,6 +7,7 @@
   "passwordHintTxt": "Enter Here",
   "forgotPasswordTxt": "Forgot your Password?",
   "homeTxt": "Home",
+<<<<<<< HEAD
   "upcomingEventsTxt": "Upcoming Programs",
   "communityTxt": "Community",
   "broadcastTxt": "Donations",
@@ -24,11 +25,27 @@
   "notification": "Notification",
   "teamMembersTxt": "Team Members",
   "ngoLeadersTxt": "NGO Leaders",
+=======
+  "upcomingEventsTxt": "Upcoming Events",
+  "communityTxt": "Community",
+  "broadcastTxt": "Broadcast",
+  "mPsTxt": "MP’s",
+  "mLAsTxt": "MLA’s",
+  "mLCsTxt": "MLC’s",
+  "spokePersonsTxt": "Spoke Persons",
+  "groupTxt": "Group",
+  "excludedTxt": "Excluded",
+  "notification": "Notification",
+  "leadershipTxt":"Leadership",
+  "partyWingsTxt": "Party Wings",
+  "neteTxt": "Nete",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   "followTxt": "Follow",
   "mobileNumberValidationErrorTxt1": "Please enter mobile number",
   "mobileNumberValidationErrorTxt2": "Please enter valid mobile number",
   "passwordValidationError1": "Please enter password",
   "submitTxt": "Submit",
+<<<<<<< HEAD
   "viewAllTxt": "View All",
   "logoutTxt": "Logout",
   "aboutNgoTxt": "About Our NGO",
@@ -40,5 +57,18 @@
   "postMessageTxt": "Post Message",
   "upcomingMeetingsTxt": "Upcoming Meetings",
   "volunteerExceptTxt": "Volunteer Partners"
+=======
+  "viewAllTxt": "ViewAll",
+  "logoutTxt": "Logout",
+  "aboutPartyTxt": "About Party",
+  "ourLeaderTxt": "Our Leader",
+  "mediaTxt": "Media",
+  "electionCampaignTxt": "Election Campaign",
+  "liveTxt": "Live",
+  "newBroadcastTxt": "New Broadcast",
+  "postMessageTxt": "Post Message",
+  "upcomingMeetingsTxt": "Upcoming Meetings",
+  "memberExceptTxt": "Member Except"
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 }

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:vf_app/screen/homeScreen/home_screen.dart';
 import 'package:vf_app/screen/login/login_screen.dart';
+<<<<<<< HEAD
+=======
+import 'package:vf_app/screen/tabScreen.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 class SplashProvider extends ChangeNotifier {
 

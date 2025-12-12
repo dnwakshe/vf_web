@@ -5,11 +5,19 @@ import 'package:vf_app/constants/app_textstyle.dart';
 
 class CommonAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CommonAppBar({
+<<<<<<< HEAD
     super.key,
     this.onleadingPressed,
     required this.title,
     this.actions,
   });
+=======
+    Key? key,
+    this.onleadingPressed,
+    required this.title,
+    this.actions,
+  }) : super(key: key);
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   final Function()? onleadingPressed;
   final String title;
   final List<Widget>? actions;

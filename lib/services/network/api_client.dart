@@ -3,6 +3,10 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
+<<<<<<< HEAD
+=======
+import 'package:flutter/material.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 import 'package:http/http.dart' as http;
 import 'package:http/retry.dart';
@@ -124,12 +128,20 @@ class ApiClient extends HttpMethod {
     var response = await request.send().timeout(
       const Duration(seconds: 30),
       onTimeout: () {
+<<<<<<< HEAD
         Utils.showCustomSnackBar(context,'Something went wrong. Try again later.');
+=======
+        Utils.showCustomSnackBar(context!,'Something went wrong. Try again later.');
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         // EasyLoading.dismiss();
         return request.send();
       },
     ).onError((error, stackTrace) {
+<<<<<<< HEAD
       Utils.showCustomSnackBar(context,'Something went wrong. Try again later.');
+=======
+      Utils.showCustomSnackBar(context!,'Something went wrong. Try again later.');
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
       // EasyLoading.dismiss();
       return request.send();
     }).catchError((error) {
@@ -150,10 +162,17 @@ class ApiClient extends HttpMethod {
       var responseString = await response.stream.bytesToString();
       var errorBody = jsonDecode(responseString);
       String errorMessage = errorBody['message'] ?? 'Validation error';
+<<<<<<< HEAD
       Utils.showCustomSnackBar(context,errorMessage);
     } else if (response.statusCode == 500) {
       log("API_CLIENT_MULTIPART: 500");
       Utils.showCustomSnackBar(context,'Server error. Please try again later.');
+=======
+      Utils.showCustomSnackBar(context!,errorMessage);
+    } else if (response.statusCode == 500) {
+      log("API_CLIENT_MULTIPART: 500");
+      Utils.showCustomSnackBar(context!,'Server error. Please try again later.');
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     } else {
       log("API_CLIENT_MULTIPART: ${response.statusCode}");
       // Handle other status codes as needed
@@ -227,11 +246,19 @@ class ApiClient extends HttpMethod {
           .timeout(
         const Duration(seconds: 30),
         onTimeout: () {
+<<<<<<< HEAD
           Utils.showCustomSnackBar(context,'Something went wrong. Try again later.');
           return http.post(Uri.parse(route));
         },
       ).onError((error, stackTrace) {
         Utils.showCustomSnackBar(context,'Something went wrong. Try again later.');
+=======
+          Utils.showCustomSnackBar(context!,'Something went wrong. Try again later.');
+          return http.post(Uri.parse(route));
+        },
+      ).onError((error, stackTrace) {
+        Utils.showCustomSnackBar(context!,'Something went wrong. Try again later.');
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         return http.post(Uri.parse(route));
       });
 

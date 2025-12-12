@@ -15,7 +15,11 @@ class NotificationItemWidget extends StatelessWidget {
           children: [
             Expanded(
                 child: TextH6(
+<<<<<<< HEAD
               title: "VF App NGO",
+=======
+              title: "Shivsena",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
               weight: FontWeight.w600,
               color: AppColors.textColor,
             )),
@@ -31,7 +35,11 @@ class NotificationItemWidget extends StatelessWidget {
         ),
         const TextH7(
           title:
+<<<<<<< HEAD
               "Exciting news! Our latest child welfare program has successfully reached 500 underprivileged children in rural areas. Join us in making a difference...",
+=======
+              "Eknath Sambhaji Shinde is an Indian politician serving as the 20th and Ex Chief Minister of...",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
           weight: FontWeight.w400,
           color: AppColors.textColor,
         ),
@@ -39,7 +47,11 @@ class NotificationItemWidget extends StatelessWidget {
           height: Utils.screenHeight * 0.01,
         ),
         const TextH7(
+<<<<<<< HEAD
           title: "Apr 13 2025",
+=======
+          title: "Arp 13 2025",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
           weight: FontWeight.w400,
           color: AppColors.captionColor,
         )

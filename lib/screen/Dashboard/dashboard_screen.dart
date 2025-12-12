@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import 'package:flutter/foundation.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 // import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -160,7 +164,11 @@ Widget WebData() {
 
         // Title
         const Text(
+<<<<<<< HEAD
           "Web Test", 
+=======
+          "Vishwanayak Foundation",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.bold,

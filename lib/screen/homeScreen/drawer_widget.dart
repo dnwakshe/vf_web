@@ -14,6 +14,10 @@ import 'package:vf_app/screen/login/login_screen.dart';
 import 'package:vf_app/utils/utils.dart';
 import 'package:vf_app/utils/widgets/UIComponents/svg_widget_custom.dart';
 
+<<<<<<< HEAD
+=======
+import '../dashboard1/dashboard_screen.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 import '../drawerScreens/about/about_screen.dart';
 import '../drawerScreens/electionCampaign/election_campaign_screen.dart';
 import '../drawerScreens/media/media_screen.dart';

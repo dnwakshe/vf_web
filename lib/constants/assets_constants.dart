@@ -58,7 +58,11 @@ class AssetsConstants {
   static const gavliImage = "$basePath/images/havnatai Gavli.png";
   static const kambliImage = "$basePath/images/image 28.png";
   static const slider2Image = "$basePath/images/jay_mh.png";
+<<<<<<< HEAD
   static const slider1Image = "$basePath/images/36.png";
+=======
+  static const slider1Image = "$basePath/images/slider_1.png";
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   static const mask1Image = "$basePath/images/Mask group (1).png";
   static const mask2Image = "$basePath/images/Mask group (2).png";
   static const mask3Image = "$basePath/images/Mask group (3).png";

@@ -40,6 +40,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       setState(() {});
     });
     upcomingMeetingList.add(UpcomingMeetingModel(
+<<<<<<< HEAD
       "Child Welfare Workshop",
       "Comprehensive workshop on protecting children's rights and welfare initiatives. Focus on education, health, and social security for underprivileged children.",
       "15th Dec 2025 | 10:00 am",
@@ -62,10 +63,34 @@ class _DashboardScreenState extends State<DashboardScreen>
         "Strategic discussion on influencing policy for social welfare. How can we advocate for better governance and community rights?",
         "28th Dec 2025 | 03:00 pm",
         true));
+=======
+      "Regarding discussing the election",
+      "In order to devise important policies for the upcoming elections of your party, as well as to organize the election process effectively",
+      "20th Oct 2025 | 10:00 am",
+      true,
+    ));
+    upcomingMeetingList.add(UpcomingMeetingModel(
+      "Regarding discussing promotional\nstrategies",
+      "How to use social media and digital tools in promotion?\nHow to tackle the challenges of campaigning at the regional level? "
+          "\nImportance of effective speeches, public meetings, rallies to convey the message."
+          " \nPlace - 28-B, Western Express Highway, Nesco, Goregaon, Mumbai, Maharashtra 40006",
+      "20th Oct 2025 | 10:00 am",
+      true,
+    ));
+    upcomingMeetingList.add(UpcomingMeetingModel(
+      "Candidate Selection and Interconstituent \nRelationships",
+      "What are the attributes to look for while choosing the right candidate?\nHow to maintain unity among party constituents and coordinate campaigns?",
+      "20th Oct 2025 | 10:00 am",
+      true,
+    ));
+    upcomingMeetingList.add(UpcomingMeetingModel(
+        "Diwali Pahat", "description", "1 Nov, 2025", true));
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     bool isWeb = screenWidth > 800;
     
     if (isWeb) {
@@ -208,6 +233,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildMobileDashboard() {
+=======
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     return Scaffold(
       body: Column(
         children: [
@@ -232,6 +259,10 @@ class _DashboardScreenState extends State<DashboardScreen>
               children: [upcomingEventsWidget(), upcomingMeetingsWidget()],
             ),
           )
+<<<<<<< HEAD
+=======
+          // upcomingEventsWidget()
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         ],
       ),
     );
@@ -239,6 +270,7 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   //carouselSliderWidget
   Widget carouselSliderWidget() {
+<<<<<<< HEAD
     bool isWeb = screenWidth > 800;
     final double height = isWeb ? 320.0 : screenHeight * 0.24;
 
@@ -317,6 +349,64 @@ class _DashboardScreenState extends State<DashboardScreen>
           ),
         ),
         const SizedBox(height: 8),
+=======
+    return Column(
+      children: [
+        CarouselSlider(
+          items: imgList
+              .map((item) => Container(
+                    margin: EdgeInsets.symmetric(vertical: screenHeight * 0.01),
+                    child: ClipRRect(
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(5.0)),
+                        child: Stack(
+                          children: <Widget>[
+                            Image.asset(item, fit: BoxFit.cover, width: 1000.0),
+                            Positioned(
+                              bottom: 0.0,
+                              left: 0.0,
+                              right: 0.0,
+                              child: Container(
+                                decoration: const BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Color.fromARGB(200, 0, 0, 0),
+                                      Color.fromARGB(0, 0, 0, 0)
+                                    ],
+                                    begin: Alignment.bottomCenter,
+                                    end: Alignment.topCenter,
+                                  ),
+                                ),
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 10.0, horizontal: 20.0),
+                                child: const Text(
+                                  '',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                  ))
+              .toList(),
+          carouselController: _controller,
+          options: CarouselOptions(
+              autoPlay: true,
+              enlargeCenterPage: true,
+              aspectRatio: 2.0,
+              enlargeFactor: 0.18,
+              viewportFraction: 0.9,
+              onPageChanged: (index, reason) {
+                setState(() {
+                  _current = index;
+                });
+              }),
+        ),
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: imgList.asMap().entries.map((entry) {
@@ -398,6 +488,7 @@ class _DashboardScreenState extends State<DashboardScreen>
       ),
     );
   }
+<<<<<<< HEAD
 
   // Web-specific builder methods
   Widget _buildFocusAreaCard(
@@ -575,4 +666,6 @@ class _DashboardScreenState extends State<DashboardScreen>
       ),
     );
   }
+=======
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 }

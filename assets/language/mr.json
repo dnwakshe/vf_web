@@ -9,6 +9,7 @@
   "homeTxt": "मुख्यपृष्ठ",
   "upcomingEventsTxt": "आगामी कार्यक्रम",
   "communityTxt": "समुदाय",
+<<<<<<< HEAD
   "broadcastTxt": "दान",
   "initiativesTxt": "उद्यम",
   "focusAreasTxt": "मुख्य क्षेत्र",
@@ -23,11 +24,24 @@
   "notification": "सूचना",
   "teamMembersTxt": "संघ सदस्य",
   "ngoLeadersTxt": "संस्था नेते",
+=======
+  "broadcastTxt": "प्रसारण",
+  "mPsTxt": "खासदार",
+  "mLAsTxt": "आमदार",
+  "mLCsTxt": "आमदार",
+  "spokePersonsTxt": "प्रवक्ता",
+  "groupTxt": "गट",
+  "notification": "सूचना",
+  "leadershipTxt":"मुख्य कार्यकारिणी",
+  "partyWingsTxt": "अधिकृत संगठना",
+  "neteTxt": "नेते",
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
   "followTxt": "अनुसरण करा",
   "mobileNumberValidationErrorTxt1": "कृपया मोबाईल नंबर टाका",
   "mobileNumberValidationErrorTxt2": "कृपया वैध मोबाइल नंबर प्रविष्ट करा",
   "passwordValidation": "कृपया पासवर्ड टाका",
   "submitTxt": "सबमिट करा",
+<<<<<<< HEAD
   "viewAllTxt": "सर्व पहा",
   "logoutTxt": "लॉगआउट",
   "aboutNgoTxt": "आमच्या संस्थेबद्दल",
@@ -39,5 +53,19 @@
   "upcomingMeetingsTxt": "आगामी कार्यक्रम",
   "postMessageTxt": "पोस्ट मेसेज",
   "volunteerExceptTxt": "स्वेच्छेचेक भागीदार"
+=======
+  "viewAllTxt": "(सर्व पहा)",
+  "logoutTxt": "लॉगआउट",
+  "aboutPartyTxt": "पार्टी बद्दल",
+  "ourLeaderTxt": "आमचे नेते",
+  "mediaTxt": "मीडिया",
+  "excludedTxt": "वगळलेले",
+  "electionCampaignTxt": "निवडणूक प्रचार",
+  "liveTxt": "लाइव्ह",
+  "newBroadcastTxt": "नवीन प्रसारण",
+  "upcomingMeetingsTxt": "आगामी कार्यक्रम",
+  "postMessageTxt": "पोस्ट मेसेज",
+  "memberExceptTxt": "सदस्य वगळता"
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 }

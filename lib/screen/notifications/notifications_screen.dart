@@ -2,6 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:vf_app/constants/app_colors.dart';
 import 'package:vf_app/constants/string_constants.dart';
+<<<<<<< HEAD
+=======
+import 'package:vf_app/constants/text_widgets.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 import 'package:vf_app/screen/notifications/notification_item_widget.dart';
 import 'package:vf_app/utils/utils.dart';
 import 'package:vf_app/utils/widgets/UIComponents/custom_app_bar.dart';

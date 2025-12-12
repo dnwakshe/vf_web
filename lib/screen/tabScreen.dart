@@ -49,7 +49,11 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   // Web-style top navigation bar with icons
   PreferredSizeWidget _buildWebAppBar() {
     return AppBar(
+<<<<<<< HEAD
       title: const Text('Web Test'),
+=======
+      title: const Text('Vishwanayak Foundation'),
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
       flexibleSpace: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -187,7 +191,11 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     return Scaffold(
       appBar: kIsWeb
           ? _buildWebAppBar()
+<<<<<<< HEAD
           : const CommonAppBar(title: 'Web Test'),
+=======
+          : const CommonAppBar(title: 'Vishwanayak Foundation'),
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
       body: _pages[_selectedIndex],
       bottomNavigationBar: kIsWeb ? null : _buildBottomNavBar(),
     );

@@ -12,11 +12,17 @@ import 'package:vf_app/screen/broadcast/newBroadcast/broadcast_screen.dart';
 import 'package:vf_app/screen/community/community_screen.dart';
 import 'package:vf_app/screen/dashboard1/dashboard_screen.dart';
 import 'package:vf_app/screen/homeScreen/drawer_widget.dart';
+<<<<<<< HEAD
 import 'package:vf_app/screen/drawerScreens/about_screen.dart';
 import 'package:vf_app/screen/notifications/notifications_screen.dart';
 import 'package:vf_app/utils/utils.dart';
 import 'package:vf_app/utils/widgets/UIComponents/svg_widget_custom.dart';
 import 'package:vf_app/utils/widgets/footer.dart';
+=======
+import 'package:vf_app/screen/notifications/notifications_screen.dart';
+import 'package:vf_app/utils/utils.dart';
+import 'package:vf_app/utils/widgets/UIComponents/svg_widget_custom.dart';
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,7 +43,11 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   void initState() {
     super.initState();
+<<<<<<< HEAD
     tabController = TabController(length: 4, vsync: this);
+=======
+    tabController = TabController(length: 3, vsync: this);
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     tabController.addListener(() {
       setState(() {
         _currentIndex = tabController.index;
@@ -54,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     bool isWeb = screenWidth > 800;
     
     return Scaffold(
@@ -72,10 +83,27 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               )
             : null,
+=======
+    return Scaffold(
+      key: _scaffoldKey,
+      drawer: const DrawerWidget(),
+      appBar: AppBar(
+        leading: Padding(
+          padding: EdgeInsets.only(left: screenWidth * 0.04),
+          child: GestureDetector(
+            onTap: () {
+              log("onTap:");
+              _scaffoldKey.currentState!.openDrawer();
+            },
+            child: const SvgWidgetCustom(svgPath: AssetsConstants.menuIcon),
+          ),
+        ),
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         title: TextH4(
           title: _currentIndex == 0
               ? StringConstants.homeTxt.tr()
               : _currentIndex == 1
+<<<<<<< HEAD
                   ? StringConstants.communityTxt.tr()
                   : _currentIndex == 2
                       ? StringConstants.broadcastTxt.tr()
@@ -86,6 +114,15 @@ class _HomeScreenState extends State<HomeScreen>
         centerTitle: !isWeb,
         elevation: 2,
         shadowColor: Colors.grey.withOpacity(0.2),
+=======
+              ? StringConstants.communityTxt.tr()
+              : StringConstants.broadcastTxt.tr(),
+          color: AppColors.textColor,
+          weight: FontWeight.w500,
+        ),
+        centerTitle: true,
+        elevation: 0,
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         backgroundColor: AppColors.white,
         actions: [
           Visibility(
@@ -108,6 +145,7 @@ class _HomeScreenState extends State<HomeScreen>
           SizedBox(width: screenWidth * 0.04),
         ],
       ),
+<<<<<<< HEAD
       body: isWeb ? _buildWebLayout(context) : _buildMobileLayout(),
     );
   }
@@ -344,6 +382,52 @@ class _HomeScreenState extends State<HomeScreen>
               ],
             ),
           ),
+=======
+      body: BottomBar(
+        width: screenWidth * 1,
+        borderRadius: BorderRadius.circular(50),
+        body: (BuildContext context, ScrollController controller) {
+          return SizedBox(
+            width: double.infinity,
+            child: TabBarView(
+              controller: tabController,
+              children: const <Widget>[
+                DashboardScreen(),
+                CommunityScreen(),
+                NewBroadcastScreen(),
+              ],
+            ),
+          );
+        },
+        child: TabBar(
+          indicator: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(50),
+          ),
+          indicatorPadding: EdgeInsets.symmetric(
+            vertical: screenHeight * 0.015,
+            horizontal: screenWidth * 0.03,
+          ),
+          splashBorderRadius: BorderRadius.circular(50),
+          controller: tabController,
+          tabs: [
+            bottomNavItem(
+              StringConstants.homeTxt.tr(),
+              AssetsConstants.homeIcon,
+              0,
+            ),
+            bottomNavItem(
+              StringConstants.communityTxt.tr(),
+              AssetsConstants.communityIcon,
+              1,
+            ),
+            bottomNavItem(
+              StringConstants.broadcastTxt.tr(),
+              AssetsConstants.broadcastIcon,
+              2,
+            ),
+          ],
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
         ),
       ),
     );

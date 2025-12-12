@@ -44,7 +44,11 @@ class WeatherDataModel {
   }
 
   Map<String, dynamic> toJson() {
+<<<<<<< HEAD
     final Map<String, dynamic> data = <String, dynamic>{};
+=======
+    final Map<String, dynamic> data = Map<String, dynamic>();
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     data['latitude'] = latitude;
     data['longitude'] = longitude;
     data['generationtime_ms'] = generationtimeMs;
@@ -84,7 +88,11 @@ class CurrentUnits {
   }
 
   Map<String, dynamic> toJson() {
+<<<<<<< HEAD
     final Map<String, dynamic> data = <String, dynamic>{};
+=======
+    final Map<String, dynamic> data = Map<String, dynamic>();
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     data['time'] = time;
     data['interval'] = interval;
     data['temperature_2m'] = temperature2m;
@@ -109,7 +117,11 @@ class Current {
   }
 
   Map<String, dynamic> toJson() {
+<<<<<<< HEAD
     final Map<String, dynamic> data = <String, dynamic>{};
+=======
+    final Map<String, dynamic> data = Map<String, dynamic>();
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     data['time'] = time;
     data['interval'] = interval;
     data['temperature_2m'] = temperature2m;
@@ -134,7 +146,11 @@ class HourlyUnits {
   }
 
   Map<String, dynamic> toJson() {
+<<<<<<< HEAD
     final Map<String, dynamic> data = <String, dynamic>{};
+=======
+    final Map<String, dynamic> data = Map<String, dynamic>();
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     data['time'] = time;
     data['temperature_2m'] = temperature2m;
     data['relative_humidity_2m'] = relativeHumidity2m;
@@ -159,7 +175,11 @@ class Hourly {
   }
 
   Map<String, dynamic> toJson() {
+<<<<<<< HEAD
     final Map<String, dynamic> data = <String, dynamic>{};
+=======
+    final Map<String, dynamic> data = Map<String, dynamic>();
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
     data['time'] = time;
     data['temperature_2m'] = temperature2m;
     data['relative_humidity_2m'] = relativeHumidity2m;

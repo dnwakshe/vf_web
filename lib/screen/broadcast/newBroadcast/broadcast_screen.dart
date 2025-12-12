@@ -4,7 +4,10 @@ import 'package:vf_app/constants/assets_constants.dart';
 import 'package:vf_app/constants/text_widgets.dart';
 import 'package:vf_app/screen/broadcast/addBroadCast/add_broadcast_screen.dart';
 import 'package:vf_app/utils/utils.dart';
+<<<<<<< HEAD
 import 'package:vf_app/utils/widgets/image_with_fallback.dart';
+=======
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
 
 class NewBroadcastScreen extends StatefulWidget {
   const NewBroadcastScreen({super.key});
@@ -19,6 +22,7 @@ class _NewBroadcastScreenState extends State<NewBroadcastScreen> {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     // Donation screen with QR and receipt note
     final qrSize = screenWidth > 800 ? 320.0 : screenWidth * 0.6;
     return Scaffold(
@@ -67,6 +71,66 @@ class _NewBroadcastScreenState extends State<NewBroadcastScreen> {
                   ),
                 ],
               ),
+=======
+    return Scaffold(
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+          vertical: screenHeight * 0.02,
+          horizontal: screenWidth * 0.03,
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const TextH5(
+                  title: "Recent Update",
+                  weight: FontWeight.w500,
+                  color: AppColors.black,
+                ),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const AddBroadcastScreen()));
+                    },
+                    child: const Icon(Icons.add)),
+              ],
+            ),
+            SizedBox(height: screenHeight * 0.01),
+            Column(
+              children: [
+                updateItem(
+                  "Regarding discussing the election",
+                  "In order to devise important policies for the upcoming elections of your party, as well as to organize the election process effectively",
+                  "20th Oct 2025 | 10:00 am",
+                  true,
+                ),
+                const Divider(
+                  thickness: 1,
+                ),
+                updateItem(
+                  "Regarding discussing promotional\nstrategies",
+                  "How to use social media and digital tools in promotion?\nHow to tackle the challenges of campaigning at the regional level? "
+                      "\nImportance of effective speeches, public meetings, rallies to convey the message."
+                      " \nPlace - 28-B, Western Express Highway, Nesco, Goregaon, Mumbai, Maharashtra 40006",
+                  "20th Oct 2025 | 10:00 am",
+                  true,
+                ),
+                const Divider(
+                  thickness: 1,
+                ),
+                updateItem(
+                  "Candidate Selection and Interconstituent \nRelationships",
+                  "What are the attributes to look for while choosing the right candidate?\nHow to maintain unity among party constituents and coordinate campaigns?",
+                  "20th Oct 2025 | 10:00 am",
+                  true,
+                ),
+                // const Divider(thickness: 1,),
+              ],
+>>>>>>> 027bce8cbfc59bc57ec502c974ca59433750a853
             ),
           ],
         ),
